@@ -1,0 +1,363 @@
+Gun x Style - Hyper Shooting
+
+Brainstorm
+-Character Action First Person Shooting
+-High-tech battle suit
+-Mission-based format (Sort of like Strike Suit Zero)
+-Multiple suit forms (Out of scope)
+	-Standard
+		-Triple ground dash
+		-Single air dash
+	-Power Suit
+		-Slightly bulkier
+		-Super Armor
+		-Bangai-O Missiles
+		-Single Dash
+		-Single Air Dash
+	-LEVRAM
+		-Light Emitting Vector Ram
+		-Basically a Vector Cannon
+		-Locks in place
+		-Super Armor
+		-Increased shield effectiveness/Decreased meter drain
+		-Long charge-up time
+		-Super powerful continuous laser
+	-Limiters Off
+		-Devil Trigger
+		-Denoted by spinning glyph on UI
+		-Standard suit only better
+		-Super fast (Near-instant accelleration, increased dodge * command attack speed)
+		-Triple Air Dash?
+		-New attacks
+-Suit forms activated situationally, can be unlocked for free usage
+	-Request form auth from command center
+	-Power suit available vs bosses
+	-LEVRAM for boss finishers
+-Metroid Prime-esque visor GUI
+	-360-degree visibility via rearview-style overlay(?)
+	-3D radar showing projectiles and enemies
+		-Player should be able to survive with the radar alone(!)
+		-Gravity vector display in center
+		-Graphic to indicate shield parry timing
+			-Display using a distance-aware rhythm game-like interface for projectiles
+-Bullet hell elements
+-Player should be able to avoid all damage with skill
+	-Shield reflector system
+	-Shield button
+		-Hold to activate
+		-Drains meter constantly
+		-Initial activation cost
+		-Mash prevention
+		-Restore activation cost, negate damage and reset mash prevention on precise activation
+		-Regen over time
+-Non-regenerating health
+-Skill/style ranking system (AI- 'Optima'?)
+-Player gets hitscan, projectiles and melee
+-Enemies get projectiles and melee
+-Lots of mobility options
+	-Dash
+	-Dash transitions into Virtua On-style leaning Sprint?
+	-Charge Jump?
+	-Double Jump
+	-Wall Run (Dash/Sprint then jump into wall. Angled camera.)
+	-Wall Jump (Press forward into a wall in mid-air and press jump)
+	-Wall Kick (Press away from a wall while next to it and press jump)
+	-Wall Sprint (Press Sprint key again during Wall Run. Camera fully rotated parallel to wall.)
+	-Fastfall/Ground Pound
+	-Float mechanic on attack
+-Melee options
+	-Combo
+	-Stinger (Blastback - Forward/Backward Dash + Melee)
+	-Roundhouse (Knockdown - Side Dash + Melee)
+	-Shoryuken (Launcher - Jumping + Melee)
+	-Divekick (Knockdown - Aerial Stinger)
+-Character action state system
+	-Standing
+	-Walking/Running
+	-Attacking (Various)
+	-Jumping
+	-Falling
+	-Damage Stun
+	-Knockdown
+	-Launch
+	-Blastback/Spike
+	-Wallsplat
+	-Ground Recovery
+	-Air Recovery
+-Stun meter for player & enemies to determine when they can be damage stunned, knocked down, launched, etc. (?)
+-Guns should have a 'moveset'
+	-Directional dash attacks
+	-Different behaviour while locked on
+-Small amount of distinct weapons
+	-Dual handguns
+		-All rounder
+		-Heavy pistol mode
+			-Free Aim
+				-Strong, mid-low fire-rate orb projectiles
+			-Lock-on
+				-Mid-high fire rate beam projectiles
+			-Forward Dash
+				-
+			-Side Dash
+				-
+			-Back Dash
+				-
+		-Rapid-fire SMG mode
+			-Free Aim
+				-Hitscan
+				-Railgun-like trail effect
+			-Lock-on
+				-Fast, weak homing plasma projectiles
+			-Forward Dash
+				-
+			-Side Dash
+				-
+			-Back Dash
+				-
+	-Two-hand rifle
+		-Shotgun mode
+			-Free Aim
+				-Short-range hitscan
+				-R&C shock cannon-like graphics, average spread
+				-Blastback at close range
+			-Lock-on
+				-Changes colour, narrows spread, +1 pierce
+				-Blastback at close range
+			-Forward Dash
+				-Gunstinger
+				-Super short-range explosion
+				-Super high-impact
+				-Extra blastback
+			-Side Dash
+				-Projectile vortex
+				-Spins clockwise/anticlockwise depending on dash direction
+			-Back Dash
+				-'Boomerang' projectiles fire outwards in cone and curve back behind target
+				-Mild blastback (forward)
+		-Railgun mode
+			-Free Aim
+				-Long-range hitscan
+				-Beam afterimage fade (screen-space?)
+				-Visual distortion effect
+			-Lock-on
+				-Long-range fast projectile beam
+				-Will curve somewhat to hit (Unnecessary if lock-on is perfectly accurate)
+			-Forward Dash
+				-Double shot, second shot +1 pierce
+				-Ba-BAM
+			-Side Dash
+				-Sustained laser graphic
+				-Rapid-fire hitscan
+			-Back Dash
+				-Multi-hit mid-speed dense beam projectile
+	-Shoulder cannon
+		-Plasma cannon mode
+			-Should be roughly as powerful as the DMC1 grenade launcher
+			-Free Aim
+				-Long-range mid-fast projectile, AoE
+			-Lock-on
+				-Projectile is smaller, medium homing
+			-Forward Dash
+				-Projectile speed increase, smaller AoE, Blastback
+			-Side Dash
+				-Two-projectile burst, ~60% damage and AoE decrease
+			-Back Dash
+				-Projectile obeys gravity, launches all enemies in AoE
+		-Devastator mode
+			-Potential to be seriously OP, should limit in some way. Costs shield meter? Only gun with ammo?
+			-Fastest style meter proration
+			-Free Aim
+				-Mid-range fast rapid-fire projectile with spin-up, small AoE
+				-RY3NO pre-upgrade
+				-Knockdown
+			-Lock-on
+				-Projectiles get weak homing
+			-Forward Dash
+				-Super rapid-fire standard projectile burst, no spin-up
+			-Side Dash
+				-Standard fire rate projectile burst, no spin-up
+			-Back Dash
+				-Four-projectile burst, no spin-up, extra AoE (Blastback) and damage
+-Juggle enemies with gunfire
+-Power weapons/AoEs can Knockdown, Blastback and Launch
+-Infinite ammo
+-Can reload for instant full clip, or switch weapons for a slower recharge
+-Lock-on mode to decouple reticle from center of screen
+
+Development Plan
+-Basic Test Stage (Done)
+	-Floor (Done)
+	-Walls (Done)
+	-Open space
+	-Ramps (Done)
+	-Box to jump on (Done)
+-Basic Movement
+	-Walk (Done)
+	-Two-axis Mouselook (Done)
+	-Run (Done)
+	-Jump (Done)
+	-Double Jump (Done)
+-Dash (Done)
+	-Base on Doom mod Dash (Done)
+	-Dash limit + cooldown (Done)
+-Advanced Movement Test Area (Done)
+	-Wall Jump Shaft (Done)
+	-Wall Run Course (Done)
+	-Wall & Ceiling Run Course (Done)
+-Advanced Movement 1
+	-Wall Run (Done)
+	-Wall Kick (Done)
+	-Wall Run Up (Done)
+		-Fix mantling over things (Done)
+-Code cleanup & rework (Done)
+	-Comment everything (Done)
+	-Switch to state machine architecture (Done)
+-Advanced Movement 2
+	-Wall Sprint (Done)
+	-Rework Boost Dash as wallrun extension (Done)
+	-Fix wallrun direction (Done)
+	-Figure out Boost Dash-look direction interaction (Done)
+	-Fix analog movement (Done)
+	-Hold dash key to auto-dash out of mantle over (N/A)
+	-Fast-fall/inverse jump (Done)
+	-Slide dash (Done)
+	-Bugfix Slide Dash (Done)
+	-Fix neutral Dash from DashStop (Done)
+	-Convert Jump checks into a function (Done)
+	-Convert Dash checks into a function (Done)
+	-Drop off wall with crouch key (Done)
+	-Constant lateral movement during fast fall (Done)
+	-Camera Pitch / Yaw offset + rotation animation routines (Done)
+	-Quick Turn (Done)
+	-Fix mantle softlock (Done)
+	-Hold dash to wall cling (Done)
+-Basic Shooting
+	-Placeholder gun model (Done)
+	-Lock-on (Done)
+	-Shooting FSM (Done)
+	-Hitscan sparks (Done)
+	-Breakable Targets (Done)
+	-Calculate lock-on distance in screen space (Done)
+	-Stop interpolating aim vector when close enough to target (Done)
+	-Lock-on retarget on kill (Done)
+	-Projectiles (Done)
+	-Explosions (Done)
+	-Explosion particles (Done)
+	-Wall scorch from cannon projectile (Done)
+	-Offset explosion from impact point to prevent damage through walls (Done)
+-Further code cleanup
+	-Read through and fix any messy code
+-Target Breaker Demo
+	-Input Manager (Done)
+	-Rewrite and properly class-ify FSM (Done)
+	-Title Screen (Done)
+	-Menu FSM
+		-Reuse single animation for state changes (Done)
+		-Mouse interaction (Done) 
+		-Implement options menus
+			-Game Options (Done)
+			-Graphic Options (Done)
+				-FOV Slider (Done)
+					-Add SaveManager variable (Done)
+					-Hook into in-game camera (Done)
+					-Integrate into manager class somehow (Done)
+					-Expose methods for scripted FOV control (Done)
+			-Sound Options (Done)
+			-Control Options
+				-Key Rebinding
+	-Per-weapon switch/refire cancel timing (Done)
+	-Fix mousewheel weapon switch (Done)
+		-Buffer in mousewheel movement and switch accordingly (Done)
+	-FOV change on dash (Done)
+		-Separate factors per direction (Done)
+		-Negative change on backdash? (Done)
+		-Rethink to avoid motion sickness (Done)
+	-Implement Wall Kick (Done)
+		-Away from wall + Jump (Done)
+	-Balance platforming (Done)
+		-Prevent infinite height gain (Done)
+			-Limit airdashes (Done)
+				-One charge from ground jump, one charge from wall jump (Done)
+		-Nerf upwards wall sprint (Done)
+			-Replace with upwards lunge (Done)
+				-Use dash mechanics (Done)
+				-Allow during downward wall slide (Done)
+		-Balance Upward Lunge (Done)
+			-Tweak distance (Done)
+			-Mesh better with wall sprint test area (Done)
+	-Fix player yaw at extreme pitch angles (Done)
+	-In-game UI changes (Done)
+		-Fade in from black (Done)
+		-Curved visor UI (Done)
+		-Fix Title Screen (Done)
+		-Tweak curved UI (Done)
+			-Fix screen size scaling (Done)
+			-Investigate fixing aspect ratio (Done)
+		-Pause menu (Done)
+			-Implement based on title screen menu (Done)
+			-Blur scene using image effect (Done)
+			-Convert aim reticle / lock radius to UI elements (Done)
+	-Fix camera LookAt during wall sprint
+	-Pitch offset during forward/backward dash
+	-Fix slide dash glitch
+		-Increase delay after leaving crawlspace?
+	-Fix wallrun up glitch
+		-Don't discard raycast hits if both connect
+	-Fix title screen loading lag
+		-Timer?
+		-Callback when scripts are done preparing?
+	-Reduce wallkick activation distance
+	-Tutorial Stage
+	-Demo Stages
+-Basic Sandbag Enemy
+	-Takes damage
+	-Dies and respawns
+-Basic Enemy States
+	-Standing
+	-Damaged
+	-Knockdown
+	-Recovery
+	-Blastback/Spike
+	-Launch
+	-Wallsplat
+-Basic gun placeholders + behaviours
+	-Pistol/SMG Flinch Damage
+	-Shotgun Blastback (Close Range)
+	-Railgun Blastback (Critical)
+	-Plasma Cannon AoE Launch/Blastback
+	-Devastator Knockdown
+-Decal Manager
+	-Store references to bullet hole projectors
+	-Destroy when appropriate
+		-After timer
+		-When far away
+		-When not being looked at
+-Melee
+	-Basic Combo
+	-Air Combo
+	-Stinger
+	-Roundhouse
+	-Shoryuken
+		-Three hits on the way up
+	-Divekick
+-Player Damage
+-Player States
+-Advanced Gun Behaviours 1
+	-Lock-on attacks
+-Advanced Gun Behaviours 2
+	-Dash attacks
+-Test Enemy
+	-Walking, Jumping, Attacking States
+-Player Shield
+-HUD
+	-Rearview
+	-3D Radar
+-Balancing
+-Gun X Demo
+	-Enemy Type Design
+		-Three variants to start with
+	-Enemy Type Implementation
+	-Level Design
+		-Three simple stages to start with
+		-Multiple missions per stage?
+	-Level Implementation
